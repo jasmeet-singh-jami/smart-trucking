@@ -5,10 +5,10 @@ import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 
 const courses = [
-  "Log Book Training & Auditing",
+  "Logbook Rules & Regulations",
   "Dispatch Training",
-  "Supervisor Drug & Alcohol Training",
-  "Transportation of Dangerous Goods (TDG)",
+  "Drug & Alcohol Supervisor Training",
+  "Dangerous Goods (TDG)",
   "Defensive Driving",
 ];
 
@@ -17,7 +17,7 @@ export function TrainingCTA() {
     <section
       className="py-20"
       style={{
-        background: "linear-gradient(135deg, #F97316 0%, #FB923C 50%, #EA580C 100%)",
+        background: "linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-light) 50%, #EA580C 100%)",
       }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
