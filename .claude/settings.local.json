@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"D:/GenAI/smart-trucking/app/services/[slug]\")",
+      "Bash(mkdir -p \"D:/GenAI/smart-trucking/app/training/[slug]\")"
+    ]
+  }
+}

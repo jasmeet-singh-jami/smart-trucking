@@ -7,7 +7,22 @@
       "Bash(firecrawl scrape:*)",
       "Bash(firecrawl map:*)",
       "Bash(firecrawl search:*)",
-      "Bash(wait)"
+      "Bash(wait)",
+      "Bash(npm *)",
+      "Bash(npm)",
+      "Bash(ls *)",
+      "Bash(ls)",
+      "Bash(npx *)",
+      "Bash(npx)",
+      "Bash(git *)",
+      "Bash(git)",
+      "Bash(curl *)",
+      "Bash(curl)",
+      "Bash(npm run *)",
+      "Bash(git commit *)",
+      "Bash(git * main)",
+      "Bash(* --version)",
+      "Bash(* --help *)"
     ]
   }
 }
