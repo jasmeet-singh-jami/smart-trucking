@@ -1,0 +1,5 @@
+# About US
+
+Smart Trucking Services Inc is your one-stop shop for all trucking services and your training requirements. We are committed towards providing our clients the highest quality of service at the most economical costs with our professional and expert advice.
+
+We are here for new entrant or an established carrier, we believe that safety is a requirement as well as a good practice for your business. Our innovative safety solutions help you to sustain your business and grow by being complaint. Through a dedicated and experienced employee team, STS Inc. has become the first choice for transportation services. At STS Inc our team of dedicated consultants has many years of experience in Motor Carrier and DOT operations, so you can rely on our quality commercial trucking consulting services. Give us a call to speak with one of our trained and professional consultants today and we will be happy to have you with us.

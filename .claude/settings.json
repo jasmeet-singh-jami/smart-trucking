@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(firecrawl --status)",
+      "Bash(npm install:*)",
+      "Bash(firecrawl login:*)",
+      "Bash(firecrawl scrape:*)",
+      "Bash(firecrawl map:*)",
+      "Bash(firecrawl search:*)",
+      "Bash(wait)"
+    ]
+  }
+}
