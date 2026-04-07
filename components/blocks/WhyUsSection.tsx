@@ -9,25 +9,21 @@ const items = [
     title: "10+ Years of Experience",
     description:
       "Since 2014, Smart Trucking Services Inc has helped hundreds of carriers navigate complex US and Canadian trucking regulations. Our team brings deep expertise in Motor Carrier and DOT operations so you don't have to.",
-    large: true,
   },
   {
     icon: Package,
     title: "One-Stop Shop",
     description: "From company registration to IFTA filings — everything under one roof.",
-    large: false,
   },
   {
     icon: Bell,
     title: "Timely Renewal Tracking",
     description: "We track all your permits and authorities and alert you before they expire.",
-    large: false,
   },
   {
     icon: Globe,
     title: "US + Canada Coverage",
     description: "We handle both sides of the border — FMCSA, USDOT, and provincial authorities.",
-    large: false,
   },
 ];
 
