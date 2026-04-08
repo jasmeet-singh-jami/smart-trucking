@@ -14,17 +14,8 @@ export function HeroSection() {
         backgroundPosition: "center",
       }}
     >
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-navy/80" />
-
-      {/* Subtle dot grid */}
-      <div
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: "radial-gradient(circle, #F97316 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
-        }}
-      />
+      {/* Light overlay — photo bleeds through at ~10% */}
+      <div className="absolute inset-0 bg-white/90" />
 
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
@@ -40,7 +31,7 @@ export function HeroSection() {
 
         {/* Headline */}
         <motion.h1
-          className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight"
+          className="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-navy leading-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
@@ -51,7 +42,7 @@ export function HeroSection() {
 
         {/* Subtext */}
         <motion.p
-          className="text-slate text-lg sm:text-xl mt-6 max-w-2xl mx-auto"
+          className="text-slate-600 text-lg sm:text-xl mt-6 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -76,7 +67,7 @@ export function HeroSection() {
           </Link>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 border border-white/30 hover:border-white text-white font-semibold px-8 py-4 rounded-xl transition-colors text-base backdrop-blur-sm"
+            className="inline-flex items-center gap-2 border border-slate-300 hover:border-navy text-navy font-semibold px-8 py-4 rounded-xl transition-colors text-base"
           >
             Explore Services
           </Link>
@@ -84,7 +75,7 @@ export function HeroSection() {
 
         {/* Phone number */}
         <motion.p
-          className="text-slate text-sm mt-6"
+          className="text-slate-500 text-sm mt-6"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
@@ -96,16 +87,6 @@ export function HeroSection() {
         </motion.p>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-      >
-        <div className="w-6 h-10 border-2 border-white/30 rounded-full flex items-start justify-center pt-2">
-          <div className="w-1 h-3 bg-white/50 rounded-full" />
-        </div>
-      </motion.div>
     </section>
   );
 }
