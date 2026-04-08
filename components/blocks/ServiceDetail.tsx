@@ -32,9 +32,9 @@ export function ServiceDetail({ item, allItems, basePath, category }: Props) {
 
           {/* Sticky CTA sidebar */}
           <div className="lg:col-span-1">
-            <div className="sticky top-24 bg-navy rounded-2xl p-6 text-white">
-              <h3 className="font-heading font-bold text-lg mb-2">Need Help With This?</h3>
-              <p className="text-slate text-sm mb-6">
+            <div className="sticky top-24 bg-orange/5 border border-orange/20 rounded-2xl p-6">
+              <h3 className="font-heading font-bold text-navy text-lg mb-2">Need Help With This?</h3>
+              <p className="text-slate-500 text-sm mb-6">
                 Our consultants are ready to assist you with {item.title.toLowerCase()}.
               </p>
               <a
@@ -46,11 +46,11 @@ export function ServiceDetail({ item, allItems, basePath, category }: Props) {
               </a>
               <Link
                 href="/contact"
-                className="flex items-center gap-2 border border-steel hover:border-orange text-white font-semibold px-4 py-3 rounded-xl transition-colors w-full justify-center text-sm"
+                className="flex items-center gap-2 border border-slate-300 hover:border-orange text-navy font-semibold px-4 py-3 rounded-xl transition-colors w-full justify-center text-sm"
               >
                 Send a Message
               </Link>
-              <p className="text-slate text-xs text-center mt-4">Mon–Fri, 9am–5pm EST</p>
+              <p className="text-slate-400 text-xs text-center mt-4">Mon–Fri, 9am–5pm EST</p>
             </div>
           </div>
         </div>
