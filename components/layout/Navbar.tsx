@@ -40,8 +40,8 @@ export function Navbar() {
 
   return (
     <motion.nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-navy shadow-lg" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-300 ${
+        scrolled ? "shadow-sm border-b border-slate-100" : ""
       }`}
       initial={{ y: -80 }}
       animate={{ y: 0 }}
@@ -50,7 +50,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 text-white font-heading font-bold text-lg">
+          <Link href="/" className="flex items-center gap-2 text-navy font-heading font-bold text-lg">
             <Truck className="text-orange w-6 h-6" />
             <span>Smart <span className="text-orange">Trucking</span></span>
           </Link>
@@ -59,13 +59,13 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-6">
             {/* Services dropdown */}
             <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <button className="flex items-center gap-1 text-white/80 hover:text-white text-sm font-medium transition-colors">
+              <button className="flex items-center gap-1 text-slate-600 hover:text-navy text-sm font-medium transition-colors">
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-navy-mid border border-steel rounded-lg shadow-xl py-2 z-50">
+                <div className="absolute top-full left-0 mt-1 w-64 bg-white border border-slate-200 rounded-lg shadow-lg py-2 z-50">
                   {services.map((s) => (
-                    <Link key={s.href} href={s.href} className="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-steel/30 transition-colors">
+                    <Link key={s.href} href={s.href} className="block px-4 py-2 text-sm text-slate-600 hover:text-navy hover:bg-slate-50 transition-colors">
                       {s.label}
                     </Link>
                   ))}
@@ -75,13 +75,13 @@ export function Navbar() {
 
             {/* Training dropdown */}
             <div className="relative" onMouseEnter={() => setTrainingOpen(true)} onMouseLeave={() => setTrainingOpen(false)}>
-              <button className="flex items-center gap-1 text-white/80 hover:text-white text-sm font-medium transition-colors">
+              <button className="flex items-center gap-1 text-slate-600 hover:text-navy text-sm font-medium transition-colors">
                 Training <ChevronDown className="w-4 h-4" />
               </button>
               {trainingOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-navy-mid border border-steel rounded-lg shadow-xl py-2 z-50">
+                <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 z-50">
                   {trainingLinks.map((t) => (
-                    <Link key={t.href} href={t.href} className="block px-4 py-2 text-sm text-white/80 hover:text-white hover:bg-steel/30 transition-colors">
+                    <Link key={t.href} href={t.href} className="block px-4 py-2 text-sm text-slate-600 hover:text-navy hover:bg-slate-50 transition-colors">
                       {t.label}
                     </Link>
                   ))}
@@ -89,19 +89,19 @@ export function Navbar() {
               )}
             </div>
 
-            <a href="https://smarttesting.ca" target="_blank" rel="noopener noreferrer" className="text-white/80 hover:text-white text-sm font-medium transition-colors">
+            <a href="https://smarttesting.ca" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-navy text-sm font-medium transition-colors">
               Drug Testing
             </a>
-            <Link href="/renewals" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Renewals</Link>
-            <Link href="/downloads" className="text-white/80 hover:text-white text-sm font-medium transition-colors">Downloads</Link>
+            <Link href="/renewals" className="text-slate-600 hover:text-navy text-sm font-medium transition-colors">Renewals</Link>
+            <Link href="/downloads" className="text-slate-600 hover:text-navy text-sm font-medium transition-colors">Downloads</Link>
           </div>
 
           {/* Right side */}
           <div className="hidden lg:flex items-center gap-3">
-            <a href="https://clientportal.smartrucking.ca" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-white text-xs transition-colors">
+            <a href="https://clientportal.smartrucking.ca" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-navy text-xs transition-colors">
               Client Portal
             </a>
-            <a href="https://admin.smartrucking.ca" target="_blank" rel="noopener noreferrer" className="text-slate hover:text-white text-xs transition-colors">
+            <a href="https://admin.smartrucking.ca" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-navy text-xs transition-colors">
               Employee
             </a>
             <Link href="/contact" className="bg-orange hover:bg-orange-light text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
@@ -110,7 +110,7 @@ export function Navbar() {
           </div>
 
           {/* Mobile toggle */}
-          <button className="lg:hidden text-white" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button className="lg:hidden text-navy" onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
@@ -118,24 +118,24 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="lg:hidden bg-navy-mid border-t border-steel px-4 pb-4">
+        <div className="lg:hidden bg-white border-t border-slate-100 px-4 pb-4 shadow-lg">
           <div className="pt-4 space-y-3">
-            <p className="text-slate text-xs uppercase tracking-widest">Services</p>
+            <p className="text-slate-400 text-xs uppercase tracking-widest">Services</p>
             {services.map((s) => (
-              <Link key={s.href} href={s.href} className="block text-sm text-white/80 hover:text-white" onClick={() => setMobileOpen(false)}>
+              <Link key={s.href} href={s.href} className="block text-sm text-slate-600 hover:text-navy" onClick={() => setMobileOpen(false)}>
                 {s.label}
               </Link>
             ))}
-            <p className="text-slate text-xs uppercase tracking-widest pt-2">Training</p>
+            <p className="text-slate-400 text-xs uppercase tracking-widest pt-2">Training</p>
             {trainingLinks.map((t) => (
-              <Link key={t.href} href={t.href} className="block text-sm text-white/80 hover:text-white" onClick={() => setMobileOpen(false)}>
+              <Link key={t.href} href={t.href} className="block text-sm text-slate-600 hover:text-navy" onClick={() => setMobileOpen(false)}>
                 {t.label}
               </Link>
             ))}
-            <div className="pt-2 space-y-2 border-t border-steel">
-              <a href="https://smarttesting.ca" target="_blank" rel="noopener noreferrer" className="block text-sm text-white/80">Drug Testing ↗</a>
-              <Link href="/renewals" className="block text-sm text-white/80" onClick={() => setMobileOpen(false)}>Renewals</Link>
-              <Link href="/downloads" className="block text-sm text-white/80" onClick={() => setMobileOpen(false)}>Downloads</Link>
+            <div className="pt-2 space-y-2 border-t border-slate-100">
+              <a href="https://smarttesting.ca" target="_blank" rel="noopener noreferrer" className="block text-sm text-slate-600">Drug Testing ↗</a>
+              <Link href="/renewals" className="block text-sm text-slate-600" onClick={() => setMobileOpen(false)}>Renewals</Link>
+              <Link href="/downloads" className="block text-sm text-slate-600" onClick={() => setMobileOpen(false)}>Downloads</Link>
               <Link href="/contact" className="block text-center bg-orange text-white text-sm font-semibold px-4 py-2 rounded-lg" onClick={() => setMobileOpen(false)}>
                 Contact Us
               </Link>
