@@ -26,8 +26,8 @@ html {
 }
 
 body {
-  background-color: var(--color-navy);
-  color: var(--color-white);
+  background-color: var(--color-white);   /* was var(--color-navy) */
+  color: var(--color-navy);               /* was var(--color-white) */
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
