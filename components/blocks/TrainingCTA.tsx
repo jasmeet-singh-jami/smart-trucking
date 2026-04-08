@@ -14,12 +14,7 @@ const courses = [
 
 export function TrainingCTA() {
   return (
-    <section
-      className="py-20"
-      style={{
-        background: "linear-gradient(135deg, var(--color-orange) 0%, var(--color-orange-light) 50%, #EA580C 100%)",
-      }}
-    >
+    <section className="bg-orange-50 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -28,16 +23,16 @@ export function TrainingCTA() {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-white/70 text-xs font-semibold uppercase tracking-widest">Professional Development</span>
-            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-white mt-2 mb-4">
+            <span className="text-orange text-xs font-semibold uppercase tracking-widest">Professional Development</span>
+            <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mt-2 mb-4">
               Train Your Team
             </h2>
-            <p className="text-white/80 text-lg">
+            <p className="text-slate-600 text-lg">
               STS Inc is your one-stop shop for all trucking training requirements. We offer classroom, on-site, and online training options.
             </p>
             <Link
               href="/training"
-              className="inline-flex items-center gap-2 bg-white text-orange font-bold px-8 py-4 rounded-xl mt-8 hover:bg-white/90 transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-bold px-8 py-4 rounded-xl mt-8 transition-colors shadow-lg"
             >
               View All Training Programs
             </Link>
@@ -51,8 +46,8 @@ export function TrainingCTA() {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             {courses.map((course) => (
-              <li key={course} className="flex items-center gap-3 text-white font-medium">
-                <CheckCircle className="w-5 h-5 text-white/70 shrink-0" />
+              <li key={course} className="flex items-center gap-3 text-navy font-medium">
+                <CheckCircle className="w-5 h-5 text-orange shrink-0" />
                 {course}
               </li>
             ))}
