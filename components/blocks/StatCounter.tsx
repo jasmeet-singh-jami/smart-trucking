@@ -34,10 +34,10 @@ export function StatCounter({ value, suffix = "", prefix = "", label, duration =
 
   return (
     <div ref={ref} className="text-center">
-      <div className="text-4xl font-heading font-bold text-white">
+      <div className="text-4xl font-heading font-bold text-navy">
         {prefix}{count}{suffix}
       </div>
-      <div className="text-slate text-sm mt-1">{label}</div>
+      <div className="text-slate-500 text-sm mt-1">{label}</div>
     </div>
   );
 }
