@@ -2,7 +2,10 @@
   "permissions": {
     "allow": [
       "Bash(mkdir -p \"D:/GenAI/smart-trucking/app/services/[slug]\")",
-      "Bash(mkdir -p \"D:/GenAI/smart-trucking/app/training/[slug]\")"
+      "Bash(mkdir -p \"D:/GenAI/smart-trucking/app/training/[slug]\")",
+      "Read(//c/Users/jasme/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/**)",
+      "Read(//c/Users/jasme/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/**)",
+      "Bash(bash \"C:/Users/jasme/.claude/plugins/cache/claude-plugins-official/superpowers/5.0.7/skills/brainstorming/scripts/start-server.sh\" --project-dir \"d:/GenAI/smart-trucking\")"
     ]
   }
 }

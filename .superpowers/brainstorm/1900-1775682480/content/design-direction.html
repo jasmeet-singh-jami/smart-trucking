@@ -1,0 +1,137 @@
+<h2>Which design direction feels right?</h2>
+<p class="subtitle">All three keep the orange + navy brand — they differ in background treatment, typography weight, and visual density</p>
+
+<div class="cards">
+
+  <!-- Option A: Light & Airy -->
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#F8FAFC;padding:20px;border-radius:8px;font-family:system-ui">
+      <!-- Navbar -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding:8px 12px;background:#fff;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.08)">
+        <span style="font-weight:800;font-size:13px;color:#0A1628">Smart<span style="color:#F97316">Trucking</span></span>
+        <div style="display:flex;gap:12px">
+          <span style="font-size:10px;color:#64748B">Services</span>
+          <span style="font-size:10px;color:#64748B">Training</span>
+          <span style="font-size:10px;color:#64748B">Contact</span>
+        </div>
+        <span style="background:#F97316;color:#fff;font-size:9px;padding:4px 8px;border-radius:4px;font-weight:600">Get Quote</span>
+      </div>
+      <!-- Hero -->
+      <div style="text-align:center;padding:16px 8px;margin-bottom:16px">
+        <div style="display:inline-block;background:#FFF7ED;border:1px solid #FED7AA;color:#F97316;font-size:9px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:8px;letter-spacing:1px">CANADA'S TRUSTED CONSULTANTS</div>
+        <div style="font-size:20px;font-weight:800;color:#0A1628;line-height:1.2;margin-bottom:6px">Trucking Compliance<br/><span style="color:#F97316">&amp; Permits</span></div>
+        <div style="font-size:9px;color:#64748B;margin-bottom:12px">Serving US-Canada carriers from Brampton, ON since 2014.</div>
+        <div style="display:flex;gap:8px;justify-content:center">
+          <span style="background:#F97316;color:#fff;font-size:9px;padding:6px 14px;border-radius:6px;font-weight:600">Free Consultation</span>
+          <span style="border:1.5px solid #0A1628;color:#0A1628;font-size:9px;padding:6px 14px;border-radius:6px;font-weight:600">Our Services</span>
+        </div>
+      </div>
+      <!-- Stats bar -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px;background:#0A1628;border-radius:8px;padding:10px">
+        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:#fff">10+</div><div style="font-size:8px;color:#94A3B8">Years Exp.</div></div>
+        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:#F97316">500+</div><div style="font-size:8px;color:#94A3B8">Clients</div></div>
+        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:#fff">2</div><div style="font-size:8px;color:#94A3B8">Countries</div></div>
+        <div style="text-align:center"><div style="font-size:14px;font-weight:800;color:#F97316">24h</div><div style="font-size:8px;color:#94A3B8">Response</div></div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Light &amp; Airy</h3>
+      <p>White/light gray background, dark navy text. Clean like a professional consulting firm. Orange used sparingly as pure accent. Maximum readability.</p>
+    </div>
+  </div>
+
+  <!-- Option B: Dark Minimalist -->
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#0A1628;padding:20px;border-radius:8px;font-family:system-ui">
+      <!-- Navbar -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;padding:8px 12px;border-bottom:1px solid rgba(255,255,255,0.08)">
+        <span style="font-weight:800;font-size:13px;color:#fff">Smart<span style="color:#F97316">Trucking</span></span>
+        <div style="display:flex;gap:12px">
+          <span style="font-size:10px;color:#94A3B8">Services</span>
+          <span style="font-size:10px;color:#94A3B8">Training</span>
+          <span style="font-size:10px;color:#94A3B8">Contact</span>
+        </div>
+        <span style="border:1px solid #F97316;color:#F97316;font-size:9px;padding:4px 8px;border-radius:4px;font-weight:600">Get Quote</span>
+      </div>
+      <!-- Hero — no bg image, pure dark -->
+      <div style="text-align:center;padding:16px 8px;margin-bottom:16px">
+        <div style="display:inline-block;width:6px;height:6px;background:#F97316;border-radius:50%;margin-bottom:8px"></div>
+        <div style="font-size:20px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:6px">Trucking Compliance<br/><span style="color:#F97316">&amp; Permits</span></div>
+        <div style="font-size:9px;color:#94A3B8;margin-bottom:12px">Serving US-Canada carriers since 2014.</div>
+        <div style="display:flex;gap:8px;justify-content:center">
+          <span style="background:#F97316;color:#fff;font-size:9px;padding:6px 14px;border-radius:6px;font-weight:600">Free Consultation</span>
+          <span style="border:1px solid rgba(255,255,255,0.2);color:#fff;font-size:9px;padding:6px 14px;border-radius:6px">Our Services</span>
+        </div>
+      </div>
+      <!-- Service cards -->
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+        <div style="background:#112240;border-radius:6px;padding:8px;border:1px solid rgba(255,255,255,0.06)">
+          <div style="width:20px;height:20px;background:rgba(249,115,22,0.12);border-radius:4px;margin-bottom:4px"></div>
+          <div style="font-size:9px;font-weight:600;color:#fff;margin-bottom:2px">IFTA Filing</div>
+          <div style="font-size:8px;color:#64748B">Fuel tax reporting</div>
+        </div>
+        <div style="background:#112240;border-radius:6px;padding:8px;border:1px solid rgba(249,115,22,0.3)">
+          <div style="width:20px;height:20px;background:rgba(249,115,22,0.2);border-radius:4px;margin-bottom:4px"></div>
+          <div style="font-size:9px;font-weight:600;color:#F97316;margin-bottom:2px">Permits</div>
+          <div style="font-size:8px;color:#64748B">Cross-border</div>
+        </div>
+        <div style="background:#112240;border-radius:6px;padding:8px;border:1px solid rgba(255,255,255,0.06)">
+          <div style="width:20px;height:20px;background:rgba(249,115,22,0.12);border-radius:4px;margin-bottom:4px"></div>
+          <div style="font-size:9px;font-weight:600;color:#fff;margin-bottom:2px">Training</div>
+          <div style="font-size:8px;color:#64748B">Compliance courses</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Dark Minimalist</h3>
+      <p>Deep navy stays, but cleaner — no background photo, pure color. More whitespace, less noise. Cards use subtle borders instead of heavy fills. Sleek, modern.</p>
+    </div>
+  </div>
+
+  <!-- Option C: Split / Two-tone -->
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#F8FAFC;padding:20px;border-radius:8px;font-family:system-ui">
+      <!-- Navbar on white -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0;padding:8px 12px;background:#fff;border-radius:6px 6px 0 0;border-bottom:1px solid #E2E8F0">
+        <span style="font-weight:800;font-size:13px;color:#0A1628">Smart<span style="color:#F97316">Trucking</span></span>
+        <div style="display:flex;gap:12px">
+          <span style="font-size:10px;color:#64748B">Services</span>
+          <span style="font-size:10px;color:#64748B">Training</span>
+        </div>
+        <span style="background:#0A1628;color:#fff;font-size:9px;padding:4px 8px;border-radius:4px;font-weight:600">Contact Us</span>
+      </div>
+      <!-- Hero dark panel -->
+      <div style="background:#0A1628;padding:16px 12px;margin-bottom:0;text-align:center">
+        <div style="font-size:18px;font-weight:800;color:#fff;line-height:1.25;margin-bottom:5px">Trucking Compliance<br/><span style="color:#F97316">&amp; Permits</span></div>
+        <div style="font-size:8px;color:#94A3B8;margin-bottom:10px">Serving US-Canada carriers since 2014.</div>
+        <div style="display:flex;gap:8px;justify-content:center">
+          <span style="background:#F97316;color:#fff;font-size:9px;padding:5px 12px;border-radius:5px;font-weight:600">Get Started</span>
+          <span style="border:1px solid rgba(255,255,255,0.3);color:#fff;font-size:9px;padding:5px 12px;border-radius:5px">Learn More</span>
+        </div>
+      </div>
+      <!-- Light services section -->
+      <div style="background:#fff;padding:12px;border-radius:0 0 6px 6px">
+        <div style="font-size:8px;font-weight:700;color:#F97316;letter-spacing:1px;text-align:center;margin-bottom:8px">OUR SERVICES</div>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:5px">
+          <div style="background:#F8FAFC;border-radius:5px;padding:7px;border:1px solid #E2E8F0">
+            <div style="width:18px;height:18px;background:#FFF7ED;border-radius:3px;margin-bottom:3px;display:flex;align-items:center;justify-content:center"><span style="color:#F97316;font-size:10px">⚡</span></div>
+            <div style="font-size:8px;font-weight:600;color:#0A1628">IFTA Filing</div>
+          </div>
+          <div style="background:#F8FAFC;border-radius:5px;padding:7px;border:1px solid #E2E8F0">
+            <div style="width:18px;height:18px;background:#FFF7ED;border-radius:3px;margin-bottom:3px;display:flex;align-items:center;justify-content:center"><span style="color:#F97316;font-size:10px">📋</span></div>
+            <div style="font-size:8px;font-weight:600;color:#0A1628">Permits</div>
+          </div>
+          <div style="background:#F8FAFC;border-radius:5px;padding:7px;border:1px solid #E2E8F0">
+            <div style="width:18px;height:18px;background:#FFF7ED;border-radius:3px;margin-bottom:3px;display:flex;align-items:center;justify-content:center"><span style="color:#F97316;font-size:10px">🎓</span></div>
+            <div style="font-size:8px;font-weight:600;color:#0A1628">Training</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Split / Two-tone</h3>
+      <p>Dark hero, white content sections below. Best of both worlds — dramatic hero, highly legible content. Professional services firms often use this pattern.</p>
+    </div>
+  </div>
+
+</div>
