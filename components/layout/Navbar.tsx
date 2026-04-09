@@ -101,9 +101,9 @@ export function Navbar() {
             <a href="https://clientportal.smartrucking.ca" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-navy text-xs transition-colors">
               Client Portal
             </a>
-            <a href="https://admin.smartrucking.ca" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-navy text-xs transition-colors">
-              Employee
-            </a>
+            <Link href="/employee/login" className="text-slate-500 hover:text-navy text-xs transition-colors">
+              Employee Portal
+            </Link>
             <Link href="/contact" className="bg-orange hover:bg-orange-light text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
               Contact Us
             </Link>
