@@ -3,21 +3,43 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export function HeroSection() {
+  const bgRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!bgRef.current) return;
+      // Move background at 40% of scroll speed for parallax depth
+      const offset = window.scrollY * 0.4;
+      bgRef.current.style.backgroundPositionY = `calc(50% + ${offset}px)`;
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: "url('/images/hero-bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background image — parallax shifts at 40% scroll speed */}
+      <div
+        ref={bgRef}
+        className="absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/hero-bg.jpg')",
+          backgroundSize: "cover",
+          backgroundPositionX: "center",
+          backgroundPositionY: "50%",
+          willChange: "background-position",
+        }}
+      />
+
       {/* Light overlay — photo bleeds through at ~10% */}
       <div className="absolute inset-0 bg-white/90" />
 
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+<div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
         <motion.div
           className="inline-flex items-center gap-2 bg-orange/10 border border-orange/30 text-orange text-sm font-medium px-4 py-2 rounded-full mb-6"

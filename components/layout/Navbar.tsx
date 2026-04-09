@@ -63,7 +63,7 @@ export function Navbar() {
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-0 mt-1 w-64 bg-white border border-slate-200 rounded-lg shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-0 w-64 bg-white border border-slate-200 rounded-lg shadow-lg pt-3 pb-2 z-50">
                   {services.map((s) => (
                     <Link key={s.href} href={s.href} className="block px-4 py-2 text-sm text-slate-600 hover:text-navy hover:bg-slate-50 transition-colors">
                       {s.label}
@@ -79,7 +79,7 @@ export function Navbar() {
                 Training <ChevronDown className="w-4 h-4" />
               </button>
               {trainingOpen && (
-                <div className="absolute top-full left-0 mt-1 w-56 bg-white border border-slate-200 rounded-lg shadow-lg py-2 z-50">
+                <div className="absolute top-full left-0 mt-0 w-56 bg-white border border-slate-200 rounded-lg shadow-lg pt-3 pb-2 z-50">
                   {trainingLinks.map((t) => (
                     <Link key={t.href} href={t.href} className="block px-4 py-2 text-sm text-slate-600 hover:text-navy hover:bg-slate-50 transition-colors">
                       {t.label}
