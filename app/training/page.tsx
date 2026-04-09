@@ -5,8 +5,20 @@ import { ArrowRight, BookOpen, Radio, ShieldAlert, AlertTriangle, Car } from "lu
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Training | Smart Trucking Services Inc",
+  title: "Training",
   description: "Professional trucking training courses: log book, dispatch, TDG, defensive driving, and drug & alcohol supervisor training.",
+  alternates: { canonical: "https://smartrucking.ca/training" },
+  openGraph: {
+    title: "Trucking Training Programs | Smart Trucking Services Inc.",
+    description: "Log book, dispatch, TDG, defensive driving, and drug & alcohol supervisor training for drivers and carriers.",
+    url: "https://smartrucking.ca/training",
+    images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: "Smart Trucking Training Programs" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucking Training Programs | Smart Trucking Services Inc.",
+    description: "Log book, dispatch, TDG, defensive driving, and drug & alcohol supervisor training.",
+  },
 };
 
 const iconMap: Record<string, React.ElementType> = {

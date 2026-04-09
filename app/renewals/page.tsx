@@ -4,8 +4,20 @@ import { CheckCircle } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Renewal Ahead | Smart Trucking Services Inc",
-  description: "Stay compliant — STS Inc tracks all your permits and authorities for timely renewals.",
+  title: "Renewals",
+  description: "STS Inc tracks all your trucking permits, authorities, and licences — IFTA, IRP, USDOT, oversize permits — so you never miss a renewal deadline.",
+  alternates: { canonical: "https://smartrucking.ca/renewals" },
+  openGraph: {
+    title: "Permit & Authority Renewals | Smart Trucking Services Inc.",
+    description: "Never miss a renewal — STS Inc tracks IFTA, IRP, USDOT, oversize permits, C-TPAT, and more for Canadian and US carriers.",
+    url: "https://smartrucking.ca/renewals",
+    images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: "Trucking Permit Renewals" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Permit & Authority Renewals | Smart Trucking Services Inc.",
+    description: "Never miss a renewal — STS Inc tracks all your permits and authorities.",
+  },
 };
 
 const tracked = [

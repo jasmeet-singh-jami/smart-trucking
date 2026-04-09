@@ -5,8 +5,20 @@ import { ArrowRight, Building2, Flag, Fuel, Truck, Car, FileText, FileCheck, Shi
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services | Smart Trucking Services Inc",
+  title: "Services",
   description: "Full-spectrum trucking compliance, permits, and authority services for Canadian and US-bound carriers.",
+  alternates: { canonical: "https://smartrucking.ca/services" },
+  openGraph: {
+    title: "Trucking Services | Smart Trucking Services Inc.",
+    description: "Full-spectrum trucking compliance, permits, and authority services for Canadian and US-bound carriers.",
+    url: "https://smartrucking.ca/services",
+    images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: "Smart Trucking Services" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Trucking Services | Smart Trucking Services Inc.",
+    description: "Full-spectrum trucking compliance, permits, and authority services for Canadian and US-bound carriers.",
+  },
 };
 
 const iconMap: Record<string, React.ElementType> = {

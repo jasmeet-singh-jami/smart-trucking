@@ -4,8 +4,20 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Smart Trucking Services Inc",
-  description: "Get in touch with Smart Trucking Services Inc. Call 905-581-6105 or send us a message.",
+  title: "Contact Us",
+  description: "Get in touch with Smart Trucking Services Inc. Call 905-581-6105 or send us a message from our Brampton, ON office.",
+  alternates: { canonical: "https://smartrucking.ca/contact" },
+  openGraph: {
+    title: "Contact Smart Trucking Services Inc.",
+    description: "Call 905-581-6105 or send us a message. Office at 1 Gateway Blvd. Unit #303, Brampton, ON.",
+    url: "https://smartrucking.ca/contact",
+    images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: "Contact Smart Trucking Services" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Smart Trucking Services Inc.",
+    description: "Call 905-581-6105 or send us a message. Office in Brampton, ON.",
+  },
 };
 
 export default function ContactPage() {

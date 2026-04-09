@@ -4,8 +4,20 @@ import { StatsBar } from "@/components/blocks/StatsBar";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Us | Smart Trucking Services Inc",
-  description: "Learn about Smart Trucking Services Inc — Canada's one-stop shop for trucking compliance since 2014.",
+  title: "About Us",
+  description: "Smart Trucking Services Inc — Canada's one-stop shop for trucking compliance, permits, and training since 2014. Based in Brampton, ON.",
+  alternates: { canonical: "https://smartrucking.ca/about" },
+  openGraph: {
+    title: "About Smart Trucking Services Inc.",
+    description: "Professionally managed trucking consultants with years of experience in Motor Carrier and DOT operations. Serving carriers since 2014.",
+    url: "https://smartrucking.ca/about",
+    images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: "About Smart Trucking Services Inc." }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Smart Trucking Services Inc.",
+    description: "Canada's one-stop shop for trucking compliance and training since 2014, based in Brampton, ON.",
+  },
 };
 
 export default function AboutPage() {

@@ -15,8 +15,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = services.find((s) => s.slug === slug);
   if (!service) return {};
   return {
-    title: `${service.title} | Smart Trucking Services Inc`,
+    title: service.title,
     description: service.shortDescription,
+    alternates: { canonical: `https://smartrucking.ca/services/${slug}` },
+    openGraph: {
+      title: `${service.title} | Smart Trucking Services Inc.`,
+      description: service.shortDescription,
+      url: `https://smartrucking.ca/services/${slug}`,
+      images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: service.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${service.title} | Smart Trucking Services Inc.`,
+      description: service.shortDescription,
+    },
   };
 }
 

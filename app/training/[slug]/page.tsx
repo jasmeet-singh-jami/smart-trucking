@@ -15,8 +15,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const course = training.find((t) => t.slug === slug);
   if (!course) return {};
   return {
-    title: `${course.title} | Smart Trucking Services Inc`,
+    title: course.title,
     description: course.shortDescription,
+    alternates: { canonical: `https://smartrucking.ca/training/${slug}` },
+    openGraph: {
+      title: `${course.title} | Smart Trucking Services Inc.`,
+      description: course.shortDescription,
+      url: `https://smartrucking.ca/training/${slug}`,
+      images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: course.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${course.title} | Smart Trucking Services Inc.`,
+      description: course.shortDescription,
+    },
   };
 }
 

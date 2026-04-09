@@ -3,8 +3,20 @@ import { Download } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Downloads | Smart Trucking Services Inc",
-  description: "Download forms and documents for Smart Trucking Services Inc.",
+  title: "Downloads",
+  description: "Download forms and documents from Smart Trucking Services Inc. — NUANS, drug test, incorporation, and credit card authorization forms.",
+  alternates: { canonical: "https://smartrucking.ca/downloads" },
+  openGraph: {
+    title: "Download Forms | Smart Trucking Services Inc.",
+    description: "NUANS name search, drug test account, new incorporation registration, and credit card authorization forms.",
+    url: "https://smartrucking.ca/downloads",
+    images: [{ url: "/images/hero-bg.jpg", width: 1920, height: 1280, alt: "Smart Trucking Downloads" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Download Forms | Smart Trucking Services Inc.",
+    description: "Download trucking compliance forms and documents from STS Inc.",
+  },
 };
 
 const downloads = [

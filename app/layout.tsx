@@ -3,6 +3,7 @@ import { Inter, Plus_Jakarta_Sans, Geist } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { LocalBusinessJsonLd } from "@/components/JsonLd";
 import { cn } from "@/lib/utils";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
@@ -21,16 +22,39 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Smart Trucking Services Inc | Trucking Compliance & Permits",
+  metadataBase: new URL("https://smartrucking.ca"),
+  title: {
+    default: "Smart Trucking Services Inc. | Trucking Compliance & Permits",
+    template: "%s | Smart Trucking Services Inc.",
+  },
   description:
-    "Canada's one-stop shop for trucking compliance, permits, authorities, and training. Serving US-Canada carriers from Brampton, ON since 2014.",
+    "Canada's trusted trucking consultants. Company registration, US/Canada authorities, IFTA, oversize permits, eManifest, and training — all from Brampton, ON.",
   openGraph: {
-    title: "Smart Trucking Services Inc",
-    description: "One-stop shop for trucking compliance, permits & training.",
+    title: "Smart Trucking Services Inc.",
+    description:
+      "Canada's one-stop shop for trucking compliance, permits, authorities, and training. Serving US-Canada carriers since 2014.",
     url: "https://smartrucking.ca",
-    siteName: "Smart Trucking Services Inc",
+    siteName: "Smart Trucking Services Inc.",
     locale: "en_CA",
     type: "website",
+    images: [
+      {
+        url: "/images/hero-bg.jpg",
+        width: 1920,
+        height: 1280,
+        alt: "Smart Trucking Services Inc. — Brampton, ON",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smart Trucking Services Inc.",
+    description:
+      "Canada's one-stop shop for trucking compliance, permits, authorities, and training.",
+    images: ["/images/hero-bg.jpg"],
+  },
+  alternates: {
+    canonical: "https://smartrucking.ca",
   },
 };
 
@@ -41,7 +65,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={cn(inter.variable, jakarta.variable, "font-sans", geist.variable)}>
+      <head>
+        {/* Preload hero image — largest contentful paint element on homepage */}
+        <link rel="preload" as="image" href="/images/hero-bg.jpg" fetchPriority="high" />
+      </head>
       <body>
+        <LocalBusinessJsonLd />
         <Navbar />
         <main>{children}</main>
         <Footer />
