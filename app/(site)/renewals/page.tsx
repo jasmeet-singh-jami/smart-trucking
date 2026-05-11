@@ -41,7 +41,7 @@ export default function RenewalsPage() {
       />
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-600 text-lg leading-relaxed mb-10">
+          <p className="text-slate-600 text-lg leading-relaxed mb-10">
             Maintaining compliance means staying on top of dozens of renewal dates across multiple regulatory bodies. Smart Trucking Services Inc tracks all the existing permits and authorities of its clients to ensure timely renewal — so you can focus on running your business.
           </p>
           <h2 className="font-heading font-bold text-navy text-2xl mb-6">What We Track</h2>
@@ -49,7 +49,7 @@ export default function RenewalsPage() {
             {tracked.map((item) => (
               <li key={item} className="flex items-start gap-3">
                 <CheckCircle className="w-5 h-5 text-orange mt-0.5 shrink-0" />
-                <span className="text-gray-700 text-sm">{item}</span>
+                <span className="text-slate-700 text-sm">{item}</span>
               </li>
             ))}
           </ul>

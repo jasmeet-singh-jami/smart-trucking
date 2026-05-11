@@ -42,7 +42,7 @@ export default function ServicesPage() {
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}`}
-                  className="group border border-gray-200 hover:border-orange rounded-xl p-6 transition-all"
+                  className="group border border-slate-200 hover:border-orange rounded-xl p-6 transition-all"
                 >
                   <div className="w-12 h-12 bg-orange/10 rounded-lg flex items-center justify-center mb-4">
                     <Icon className="w-6 h-6 text-orange" />
@@ -50,7 +50,7 @@ export default function ServicesPage() {
                   <h2 className="font-heading font-semibold text-navy text-lg group-hover:text-orange transition-colors">
                     {service.title}
                   </h2>
-                  <p className="text-gray-500 text-sm mt-2">{service.shortDescription}</p>
+                  <p className="text-slate-500 text-sm mt-2">{service.shortDescription}</p>
                   <div className="flex items-center gap-1 text-orange text-sm mt-4 font-medium">
                     Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>

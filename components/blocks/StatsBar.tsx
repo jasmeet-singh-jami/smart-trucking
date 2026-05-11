@@ -8,7 +8,7 @@ export function StatsBar() {
           <StatCounter value={10} suffix="+" label="Years Experience" />
           <StatCounter value={500} suffix="+" label="Clients Served" />
           <StatCounter value={2} prefix="" suffix=" Countries" label="US & Canada Coverage" />
-          <StatCounter value={24} suffix="h" label="Response Time" />
+          <StatCounter value={24} suffix="h" label="Turnaround Time" />
         </div>
       </div>
     </section>

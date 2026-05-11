@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "Smart Trucking" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img [ref=e6]
+        - generic [ref=e11]: Smart Trucking
+      - generic [ref=e12]:
+        - button "Services" [ref=e14]:
+          - text: Services
+          - img [ref=e15]
+        - button "Training" [ref=e18]:
+          - text: Training
+          - img [ref=e19]
+        - link "Drug Testing" [ref=e21] [cursor=pointer]:
+          - /url: https://smarttesting.ca
+        - link "Renewals" [ref=e22] [cursor=pointer]:
+          - /url: /renewals
+        - link "Downloads" [ref=e23] [cursor=pointer]:
+          - /url: /downloads
+      - generic [ref=e24]:
+        - link "Client Portal" [ref=e25] [cursor=pointer]:
+          - /url: https://clientportal.smartrucking.ca
+        - link "Employee Portal" [ref=e26] [cursor=pointer]:
+          - /url: /employee/login
+        - link "Contact Us" [ref=e27] [cursor=pointer]:
+          - /url: /contact
+  - main [ref=e28]:
+    - generic [ref=e30]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: Canada's Trusted Trucking Consultants
+        - heading "Your One-Stop Shop for Trucking Compliance & Permits" [level=1] [ref=e36]
+        - paragraph [ref=e37]: Serving US–Canada carriers from Brampton, ON since 2014.
+        - paragraph [ref=e38]: Scroll to explore
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: What we do
+        - heading "Permits, authorities, IFTA, eManifest & training — all under one roof." [level=2] [ref=e42]
+        - paragraph [ref=e43]: Company registration, US/Canada authorities, oversize permits, and compliance support, handled end-to-end.
+        - link "Explore Services" [ref=e44] [cursor=pointer]:
+          - /url: /services
+          - text: Explore Services
+          - img [ref=e45]
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Why carriers choose us
+        - heading "A decade of moving fleets across the border." [level=2] [ref=e50]
+        - paragraph [ref=e51]: Bilingual support, dedicated case managers, and the paperwork experience to keep your trucks rolling — not waiting.
+      - generic [ref=e53]:
+        - heading "Ready when you are." [level=2] [ref=e54]
+        - paragraph [ref=e55]: Talk to a consultant in minutes — no obligation.
+        - generic [ref=e56]:
+          - link "Get a Free Consultation" [ref=e57] [cursor=pointer]:
+            - /url: /contact
+            - img [ref=e58]
+            - text: Get a Free Consultation
+          - link "or call 905-581-6105" [ref=e60] [cursor=pointer]:
+            - /url: tel:9055816105
+  - contentinfo [ref=e61]:
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - img [ref=e66]
+            - generic [ref=e71]: Smart Trucking
+          - paragraph [ref=e72]: Smart Trucking Services Inc — your one-stop shop for trucking compliance, permits, and training. Serving carriers across Canada and the US since 2014.
+        - generic [ref=e73]:
+          - heading "Quick Links" [level=4] [ref=e74]
+          - list [ref=e75]:
+            - listitem [ref=e76]:
+              - link "About Us" [ref=e77] [cursor=pointer]:
+                - /url: /about
+            - listitem [ref=e78]:
+              - link "Contact Us" [ref=e79] [cursor=pointer]:
+                - /url: /contact
+            - listitem [ref=e80]:
+              - link "Downloads" [ref=e81] [cursor=pointer]:
+                - /url: /downloads
+            - listitem [ref=e82]:
+              - link "Renewals" [ref=e83] [cursor=pointer]:
+                - /url: /renewals
+            - listitem [ref=e84]:
+              - link "Drug Testing ↗" [ref=e85] [cursor=pointer]:
+                - /url: https://smarttesting.ca
+        - generic [ref=e86]:
+          - heading "Services" [level=4] [ref=e87]
+          - list [ref=e88]:
+            - listitem [ref=e89]:
+              - link "Company Registration" [ref=e90] [cursor=pointer]:
+                - /url: /services/company-registration
+            - listitem [ref=e91]:
+              - link "US & Canada Authorities" [ref=e92] [cursor=pointer]:
+                - /url: /services/us-canada-authorities
+            - listitem [ref=e93]:
+              - link "Fuel Tax & IFTA" [ref=e94] [cursor=pointer]:
+                - /url: /services/fuel-tax-ifta
+            - listitem [ref=e95]:
+              - link "Oversize Permits" [ref=e96] [cursor=pointer]:
+                - /url: /services/oversize-permits
+            - listitem [ref=e97]:
+              - link "IRP & FRP Registration" [ref=e98] [cursor=pointer]:
+                - /url: /services/irp-frp-registration
+            - listitem [ref=e99]:
+              - link "View All Services →" [ref=e100] [cursor=pointer]:
+                - /url: /services
+        - generic [ref=e101]:
+          - heading "Contact Us" [level=4] [ref=e102]
+          - list [ref=e103]:
+            - listitem [ref=e104]:
+              - img [ref=e105]
+              - generic [ref=e108]:
+                - text: "1 Gateway Blvd. Unit #303"
+                - text: Brampton, ON, L6T 0G3
+            - listitem [ref=e109]:
+              - img [ref=e110]
+              - link "905-581-6105" [ref=e112] [cursor=pointer]:
+                - /url: tel:9055816105
+            - listitem [ref=e113]:
+              - img [ref=e114]
+              - link "905-791-0010" [ref=e116] [cursor=pointer]:
+                - /url: tel:9057910010
+            - listitem [ref=e117]:
+              - img [ref=e118]
+              - link "info@smartruckingservices.com" [ref=e121] [cursor=pointer]:
+                - /url: mailto:info@smartruckingservices.com
+      - generic [ref=e122]:
+        - paragraph [ref=e123]: © 2026 Smart Trucking Services Inc. All Rights Reserved.
+        - generic [ref=e124]:
+          - link "Client Portal" [ref=e125] [cursor=pointer]:
+            - /url: https://clientportal.smartrucking.ca
+          - link "Employee Login" [ref=e126] [cursor=pointer]:
+            - /url: https://admin.smartrucking.ca
+  - button "Open Next.js Dev Tools" [ref=e132] [cursor=pointer]:
+    - img [ref=e133]

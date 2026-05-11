@@ -29,7 +29,7 @@ export function ContactForm() {
           <Send className="w-8 h-8 text-orange" />
         </div>
         <h3 className="font-heading font-bold text-navy text-xl mb-2">Message Sent!</h3>
-        <p className="text-gray-500">Your email client should have opened. We'll be in touch shortly.</p>
+        <p className="text-slate-500">Your email client should have opened. We'll be in touch shortly.</p>
       </div>
     );
   }
@@ -38,43 +38,47 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label className="block text-sm font-medium text-navy mb-1">Full Name *</label>
+          <label htmlFor="contact-name" className="block text-sm font-medium text-navy mb-1">Full Name *</label>
           <input
+            id="contact-name"
             name="name"
             required
             type="text"
             placeholder="John Smith"
-            className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors"
+            className="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-navy mb-1">Phone Number</label>
+          <label htmlFor="contact-phone" className="block text-sm font-medium text-navy mb-1">Phone Number</label>
           <input
+            id="contact-phone"
             name="phone"
             type="tel"
             placeholder="905-555-0100"
-            className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors"
+            className="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors"
           />
         </div>
       </div>
       <div>
-        <label className="block text-sm font-medium text-navy mb-1">Email Address *</label>
+        <label htmlFor="contact-email" className="block text-sm font-medium text-navy mb-1">Email Address *</label>
         <input
+          id="contact-email"
           name="email"
           required
           type="email"
           placeholder="you@company.com"
-          className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors"
+          className="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors"
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-navy mb-1">Message *</label>
+        <label htmlFor="contact-message" className="block text-sm font-medium text-navy mb-1">Message *</label>
         <textarea
+          id="contact-message"
           name="message"
           required
           rows={5}
           placeholder="Tell us how we can help your trucking business..."
-          className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors resize-none"
+          className="w-full border border-slate-200 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-orange transition-colors resize-none"
         />
       </div>
       <button

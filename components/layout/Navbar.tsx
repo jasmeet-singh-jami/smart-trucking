@@ -59,7 +59,11 @@ export function Navbar() {
           <div className="hidden lg:flex items-center gap-6">
             {/* Services dropdown */}
             <div className="relative" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-              <button className="flex items-center gap-1 text-slate-600 hover:text-navy text-sm font-medium transition-colors">
+              <button
+                className="flex items-center gap-1 text-slate-600 hover:text-navy text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange rounded"
+                aria-expanded={servicesOpen}
+                aria-haspopup="true"
+              >
                 Services <ChevronDown className="w-4 h-4" />
               </button>
               {servicesOpen && (
@@ -75,7 +79,11 @@ export function Navbar() {
 
             {/* Training dropdown */}
             <div className="relative" onMouseEnter={() => setTrainingOpen(true)} onMouseLeave={() => setTrainingOpen(false)}>
-              <button className="flex items-center gap-1 text-slate-600 hover:text-navy text-sm font-medium transition-colors">
+              <button
+                className="flex items-center gap-1 text-slate-600 hover:text-navy text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange rounded"
+                aria-expanded={trainingOpen}
+                aria-haspopup="true"
+              >
                 Training <ChevronDown className="w-4 h-4" />
               </button>
               {trainingOpen && (
@@ -104,13 +112,18 @@ export function Navbar() {
             <Link href="/employee/login" className="text-slate-500 hover:text-navy text-xs transition-colors">
               Employee Portal
             </Link>
-            <Link href="/contact" className="bg-orange hover:bg-orange-light text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors">
+            <Link href="/contact" className="bg-orange hover:bg-orange-light text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2">
               Contact Us
             </Link>
           </div>
 
           {/* Mobile toggle */}
-          <button className="lg:hidden text-navy" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button
+            className="lg:hidden text-navy focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange rounded"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
+          >
             {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>

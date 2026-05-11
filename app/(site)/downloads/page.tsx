@@ -52,17 +52,17 @@ export default function DownloadsPage() {
       />
       <section className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="divide-y divide-gray-100">
+          <div className="divide-y divide-slate-100">
             {downloads.map((doc) => (
               <div key={doc.name} className="flex items-center justify-between py-5 gap-4">
                 <div>
                   <p className="font-heading font-semibold text-navy text-base">{doc.name}</p>
-                  <p className="text-gray-500 text-sm mt-1">{doc.description}</p>
+                  <p className="text-slate-500 text-sm mt-1">{doc.description}</p>
                 </div>
                 <a
                   href={doc.file}
                   download
-                  className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shrink-0"
+                  className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
                 >
                   <Download className="w-4 h-4" />
                   Download

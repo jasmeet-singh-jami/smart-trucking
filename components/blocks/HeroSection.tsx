@@ -35,8 +35,8 @@ export function HeroSection() {
         }}
       />
 
-      {/* Light overlay — photo bleeds through at ~10% */}
-      <div className="absolute inset-0 bg-white/90" />
+      {/* Light overlay — photo bleeds through at ~25% */}
+      <div className="absolute inset-0 bg-white/75" />
 
 
 <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -82,14 +82,14 @@ export function HeroSection() {
         >
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-semibold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-orange/20"
+            className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-semibold px-8 py-4 rounded-xl transition-colors text-base shadow-lg shadow-orange/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
           >
             <Phone className="w-5 h-5" />
             Get a Free Consultation
           </Link>
           <Link
             href="/services"
-            className="inline-flex items-center gap-2 border border-slate-300 hover:border-navy text-navy font-semibold px-8 py-4 rounded-xl transition-colors text-base"
+            className="inline-flex items-center gap-2 border border-slate-300 hover:border-navy text-navy font-semibold px-8 py-4 rounded-xl transition-colors text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2"
           >
             Explore Services
           </Link>

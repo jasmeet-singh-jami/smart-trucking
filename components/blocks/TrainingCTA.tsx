@@ -14,7 +14,7 @@ const courses = [
 
 export function TrainingCTA() {
   return (
-    <section className="bg-orange-50 py-20">
+    <section className="bg-orange/5 py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -32,7 +32,7 @@ export function TrainingCTA() {
             </p>
             <Link
               href="/training"
-              className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-bold px-8 py-4 rounded-xl mt-8 transition-colors shadow-lg"
+              className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-bold px-8 py-4 rounded-xl mt-8 transition-colors shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
             >
               View All Training Programs
             </Link>

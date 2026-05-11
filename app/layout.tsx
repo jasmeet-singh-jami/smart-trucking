@@ -75,8 +75,9 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/hero-bg.jpg"
+          href="/frames/frame_0001.webp"
           fetchPriority="high"
+          type="image/webp"
         />
       </head>
       <body>

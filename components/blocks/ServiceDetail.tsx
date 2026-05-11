@@ -18,13 +18,13 @@ export function ServiceDetail({ item, allItems, basePath, category }: Props) {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Main content */}
           <div className="lg:col-span-2">
-            <p className="text-gray-600 leading-relaxed text-base mb-6">{item.fullDescription}</p>
+            <p className="text-slate-600 leading-relaxed text-base mb-6">{item.fullDescription}</p>
             <h2 className="text-navy font-heading font-bold text-xl mb-4">What's Included</h2>
             <ul className="space-y-3">
               {item.bullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-orange mt-0.5 shrink-0" />
-                  <span className="text-gray-700">{bullet}</span>
+                  <span className="text-slate-700">{bullet}</span>
                 </li>
               ))}
             </ul>
@@ -39,7 +39,7 @@ export function ServiceDetail({ item, allItems, basePath, category }: Props) {
               </p>
               <a
                 href="tel:9055816105"
-                className="flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-semibold px-4 py-3 rounded-xl transition-colors w-full justify-center mb-3"
+                className="flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-semibold px-4 py-3 rounded-xl transition-colors w-full justify-center mb-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"
               >
                 <Phone className="w-4 h-4" />
                 905-581-6105
@@ -57,19 +57,19 @@ export function ServiceDetail({ item, allItems, basePath, category }: Props) {
 
         {/* Related */}
         {related.length > 0 && (
-          <div className="mt-16 pt-12 border-t border-gray-200">
+          <div className="mt-16 pt-12 border-t border-slate-200">
             <h2 className="font-heading font-bold text-navy text-2xl mb-6">Related {category}</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {related.map((rel) => (
                 <Link
                   key={rel.slug}
                   href={`${basePath}/${rel.slug}`}
-                  className="group border border-gray-200 hover:border-orange rounded-xl p-5 transition-all"
+                  className="group border border-slate-200 hover:border-orange rounded-xl p-5 transition-all"
                 >
                   <h3 className="font-heading font-semibold text-navy group-hover:text-orange text-base transition-colors">
                     {rel.title}
                   </h3>
-                  <p className="text-gray-500 text-sm mt-1">{rel.shortDescription}</p>
+                  <p className="text-slate-500 text-sm mt-1">{rel.shortDescription}</p>
                   <div className="flex items-center gap-1 text-orange text-sm mt-3 font-medium">
                     Learn more <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>

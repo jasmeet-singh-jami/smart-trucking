@@ -19,8 +19,8 @@ export function ServicesGrid() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section label */}
         <div className="text-center mb-12">
-          <span className="text-orange text-xs font-semibold uppercase tracking-widest">OUR SERVICES</span>
-          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mt-2">Our Services</h2>
+          <span className="text-orange text-xs font-semibold uppercase tracking-widest">Our Services</span>
+          <h2 className="font-heading font-bold text-3xl sm:text-4xl text-navy mt-2">Everything We Handle</h2>
           <p className="text-slate-500 mt-3 max-w-xl mx-auto">
             Full-spectrum trucking compliance, permits, and authority services for Canadian and US-bound carriers.
           </p>

@@ -24,14 +24,14 @@ export function ContactStrip() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
             <a
               href="tel:9055816105"
-              className="inline-flex items-center gap-2 bg-navy-mid border border-steel hover:border-orange text-white font-semibold px-8 py-4 rounded-xl transition-colors"
+              className="inline-flex items-center gap-2 bg-navy-mid border border-steel hover:border-orange text-white font-semibold px-8 py-4 rounded-xl transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
             >
               <Phone className="w-5 h-5 text-orange" />
               905-581-6105
             </a>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg shadow-orange/20"
+              className="inline-flex items-center gap-2 bg-orange hover:bg-orange-light text-white font-semibold px-8 py-4 rounded-xl transition-colors shadow-lg shadow-orange/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-navy"
             >
               <MessageSquare className="w-5 h-5" />
               Send Us a Message

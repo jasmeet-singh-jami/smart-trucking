@@ -1,11 +1,5 @@
 import type { Metadata } from "next";
-import { HeroSection } from "@/components/blocks/HeroSection";
-import { StatsBar } from "@/components/blocks/StatsBar";
-import { ServicesGrid } from "@/components/blocks/ServicesGrid";
-import { WhyUsSection } from "@/components/blocks/WhyUsSection";
-import { TrainingCTA } from "@/components/blocks/TrainingCTA";
-import { TestimonialsSection } from "@/components/blocks/TestimonialsSection";
-import { ContactStrip } from "@/components/blocks/ContactStrip";
+import { ScrollHomepage } from "@/components/blocks/ScrollHomepage";
 
 export const metadata: Metadata = {
   title: "Smart Trucking Services Inc. | Trucking Compliance & Permits",
@@ -31,15 +25,5 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
-  return (
-    <>
-      <HeroSection />
-      <StatsBar />
-      <ServicesGrid />
-      <WhyUsSection />
-      <TrainingCTA />
-      <TestimonialsSection />
-      <ContactStrip />
-    </>
-  );
+  return <ScrollHomepage />;
 }
